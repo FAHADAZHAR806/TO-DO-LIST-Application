@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Section Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #ddd;
+}
+
+section.dark-mode {
+  background-color: #444;
+}
+
+input[type="text"].dark-mode, select.dark-mode {
+  background-color: #555;
+  color: #ddd;
+  border: 1px solid #666;
+}
+
+button.dark-mode {
+  background-color: #666;
+  color: #ddd;
+}
+
+button.dark-mode:hover {
+  background-color: #555;
+}
+
+#todoList li.dark-mode {
+  background-color: #666;
+  color: #ddd;
+}
+
+#todoList li.dark-mode.completed {
+  background-color: #444;
+  color: #aaa;
+}
+
+#todoList li button.dark-mode {
+  background-color: #dc3545;
+}
+
+#clearCompleted.dark-mode {
+  background-color: #28a745;
+}
+
+#clearCompleted.dark-mode:hover {
+  background-color: #218838;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input Fields and Buttons */
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #003f7f;
+}
+
+/* To-Do List Styling */
+#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#todoList li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#todoList li:hover {
+  background-color: #eaeaea;
+}
+
+#todoList li.completed {
+  text-decoration: line-through;
+  background-color: #d3ffd3;
+  color: #888;
+}
+
+#todoList li span {
+  color: blue;
+  margin-left: 10px;
+}
+
+#todoList li button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#todoList li button:hover {
+  background-color: #c82333;
+}
+
+#todoList li button:active {
+  background-color: #bd2130;
+}
+
+/* Task Count Display */
+#taskCount, #completedCount {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Clear Completed Button Styling */
+#clearCompleted {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clearCompleted:hover {
+  background-color: #218838;
+}
+
+#clearCompleted:active {
+  background-color: #1e7e34;
+}
+
+/* Filter Section Styling */
+#filterCategory, #filterButton {
+  width: 49%;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+#filterButton {
+  background-color: #007bff;
+}
+
+#filterButton:hover {
+  background-color: #0056b3;
+}
